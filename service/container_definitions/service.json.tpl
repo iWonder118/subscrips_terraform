@@ -21,6 +21,10 @@
         {
           "name": "RACK_ENV",
           "value": "production"
+        },
+        {
+          "name": "RAILS_MASTER_KEY",
+          "valueFrom": "RAILS_MASTER_KEY"
         }
       ],
       "logConfiguration": {

@@ -3,6 +3,9 @@
           {
             "Effect": "Allow",
             "Action": [
+              "ssm:GetParameters",
+              "secretsmanager:GetSecretValue",
+              "kms:Decrypt",
               "ecr:GetAuthorizationToken",
               "ecr:BatchCheckLayerAvailability",
               "ecr:GetDownloadUrlForLayer",

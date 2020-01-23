@@ -1,6 +1,6 @@
 resource "aws_instance" "subscrips" {
   ami                         = "ami-0e37e42dff65024ae"
-  instance_type               = "t2.medium"
+  instance_type               = "t2.small"
   monitoring                  = true
   iam_instance_profile        = "${data.terraform_remote_state.aws_iam.outputs.ecs_instance_profile_name}"
   subnet_id                   = "${data.terraform_remote_state.vpc.outputs.public_subnet_1_id}"
